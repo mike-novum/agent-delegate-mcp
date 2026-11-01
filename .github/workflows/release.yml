@@ -36,6 +36,12 @@ jobs:
       - name: Build bundle
         run: npm run build
 
+      - name: Upload release bundle artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: index.js
+          path: index.js
+
       - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

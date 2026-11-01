@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "description": "MCP server to delegate tasks to AI agents (Claude, Antigravity, Cursor, Codex, OpenCode)",
-  "main": "dist/index.js",
+  "main": "index.js",
   "bin": {
-    "agent-delegate-mcp": "./dist/index.js"
+    "agent-delegate-mcp": "./index.js"
   },
   "files": [
-    "dist"
+    "index.js"
   ],
   "scripts": {
     "build": "node build.js",
